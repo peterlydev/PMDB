@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato&family=Lobster&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+body {
+    background-color:rgb(90, 64, 0);
+    font-family: aldrich;
+    margin: 0;
+}
+
+h1 {
+
+}
+header{
+    background-color: darkgoldenrod;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.search {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid rgb(90, 64, 0);
+    border-radius: 50px;
+    font-family: inherit;
+}
+
+.search::placeholder {
+    color: rgb(90, 64, 0);
+}
+
+.search:focus {
+    background-color: rgb(90, 64, 0);
+    outline: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: darkgoldenrod;
+    width: 300px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    margin: 2.5rem 1.75rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie img{
+    border-radius: 3px;
+    width: 100%;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem 1rem;
+    
+}
+
+.movie-info h3 {
+    margin: 0;
+
+}
+
+.overview {
+    background-color: goldenrod;
+    padding: 0.25rem;
+    position: absolute;
+    transform: translateY(101%);
+    transition: transform 0.3s linear;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overview h4 {
+    margin-top: 0;
+}
+
+
+.movie:hover .overview {
+    transform: translateY(10%);
+}
+
+.movie-info span {
+    margin: 0 0.2rem;
+    background-color:  rgb(90, 64, 0);
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;   
+}
+
+.movie-info span.green {
+    color: rgb(51, 236, 51);
+}
+
+.movie-info span.orange {
+    color: rgb(245, 193, 97);
+}
+
+.movie-info span.red {
+    color: rgb(240, 47, 47);
+}
